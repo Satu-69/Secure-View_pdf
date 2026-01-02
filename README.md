@@ -120,7 +120,8 @@ http://127.0.0.1:5000
 ## 🧑‍💻 Developed By
 
 **Satvik Trivedi**
-Cybersecurity Enthusiast | Developer | Security Researcher
+
+
 
 ---
 
