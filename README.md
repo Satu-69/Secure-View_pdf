@@ -56,7 +56,10 @@ This ensures **controlled document access** and **prevents unauthorized sharing*
 
 ## 📂 Project Structure
 
+<img width="372" height="152" alt="Screenshot 2026-01-02 193848" src="https://github.com/user-attachments/assets/420726cd-fc14-4d24-b56d-83a6348c1a10" />
 
+  ------------------------------------------------------------------------------------------------------------------------
+<img width="377" height="422" alt="image" src="https://github.com/user-attachments/assets/e99cff1e-f61d-4ad2-a862-b8787a87522a" />
 
 
 ## ⚙️ Installation & Setup
