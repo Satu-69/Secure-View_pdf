@@ -128,12 +128,6 @@ http://127.0.0.1:5000
 
 ---
 
-## 📜 License
-
-This project is licensed under the **MIT License** — feel free to modify and use with attribution.
-
----
-
 ## ⭐ Support
 
 If you like this project, don’t forget to ⭐ star the repository and share it with others!
