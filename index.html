@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Encryptor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='Abp.png') }}" sizes="96x96" > 
+
+</head>
+<body>
+    <div class="container">
+        <h1> <img src="{{ url_for('static', filename='Abp.png') }}"  class="logo">
+            Secure View PDF
+        </h1>
+
+
+        <label>Select PDF File:</label>
+        <input type="file" id="pdfFile">
+
+        <label>Save Encrypted PDF As:</label>
+        <input type="text" id="savePath" placeholder="Enter file name">
+
+        <label>Password:</label>
+        <input type="password" id="password" onkeyup="checkPasswordStrength()" required>
+        <!-- Password Strength Meter -->
+        <div id="passwordStrengthContainer">
+            <div id="passwordStrength"></div>
+        </div>
+        <p id="passwordStrengthText"></p>
+
+
+        <label>Max Views:</label>
+        <input type="range" id="maxViews"  oninput="updateViewCount()">
+        <span id="viewCountLabel">0 Views</span>
+
+        <label>Deletion Timer (seconds):</label>
+        <input type="number" id="deleteDelay" >
+        
+        
+        <button onclick="encryptPDF()">Encrypt PDF</button>
+        <button onclick="openPDF()">Open Encrypted PDF</button>
+        <button onclick="deletePDF()">Delete Now</button>
+
+        <div class="status">
+            <p>Remaining Views: <span id="remainingViews">0</span></p>
+            <p>Time Left: <span id="countdownTimer">0s</span></p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</body>
+</html>
